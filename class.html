@@ -9,6 +9,7 @@
   <body>
     <header>
       <h1>HTML 기본 속성 강의 자료</h1>
+
       <p>HTML의 기본 태그와 속성을 알아봅시다!</p>
     </header>
 
@@ -210,34 +211,19 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <h2>9. 실습하기</h2>
-        <p>아래의 코드를 직접 작성하고 브라우저에서 실행해 보세요:</p>
-        <div class="example">
-          <code>
-            &lt;!DOCTYPE html&gt;<br />
-            &lt;html&gt;<br />
-            &lt;head&gt;<br />
-            &lt;title&gt;HTML 실습&lt;/title&gt;<br />
-            &lt;/head&gt;<br />
-            &lt;body&gt;<br />
-            &lt;h1&gt;안녕하세요!&lt;/h1&gt;<br />
-            &lt;p&gt;HTML을 배우고 있습니다.&lt;/p&gt;<br />
-            &lt;hr&gt;<br />
-            &lt;img src="example.jpg" alt="예제 이미지"&gt;<br />
-            &lt;video controls&gt;<br />
-            &nbsp;&nbsp;&lt;source src="example.mp4" type="video/mp4"&gt;<br />
-            &lt;/video&gt;<br />
-            &lt;/body&gt;<br />
-            &lt;/html
-          </code>
-        </div>
-      </section>
     </main>
 
     <footer>
-      <p>이 자료는 HTML 학습을 위한 예제입니다.</p>
+      <p>이 자료를 문단으로 배포하지 마세요</p>
     </footer>
+
+    <!-- 뒤로가기 버튼 -->
+    <button onclick="goBack()" class="back-button"><</button>
+    <script>
+      // 뒤로가기 함수
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>
