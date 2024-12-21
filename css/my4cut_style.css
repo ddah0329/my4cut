@@ -1,0 +1,95 @@
+/* 이서윤체 폰트 적용을 위한 코드 */
+@font-face {
+  font-family: "LeeSeoyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body 태그에 전체 스타일 적용 */
+body {
+  font-family: "LeeSeoyun";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 수직 중앙 정렬 추가 */
+  min-height: 100vh; /* 화면 높이에 맞게 설정 */
+  background-color: lightyellow;
+}
+
+/* 네컷 컨테이너 스타일 */
+.container {
+  width: 270px;
+  height: 800px; /* 높이를 화면 비율에 맞게 설정 */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 상하 공간 균등 분배 */
+}
+.container:nth-child(1) {
+  background-image: url("../img/bg_tree.png");
+  /* background-color: #ff6666; */
+}
+.container:nth-child(2) {
+  background-image: url("../img/bg_snowman1.png");
+  /* background-color: #66b2ff; */
+}
+.container:nth-child(3) {
+  background-image: url("../img/bg_snowman2.png");
+  /* background-color: #ffcc66; */
+}
+.container:nth-child(4) {
+  background-image: url("../img/bg_snowing.png");
+  /* background-color: #66ff66; */
+}
+
+/* 사진 영역 스타일 */
+.photos {
+  margin-top: 20px;
+}
+
+.photo-frame {
+  background-color: white;
+  margin: 10px 20px;
+  height: 150px;
+  background-size: cover; /* 사진을 영역 안에 꽉 차게 설정 */
+  position: relative;
+  overflow: hidden; /* 초과 부분 숨기기 */
+}
+
+.photo-frame img {
+  width: 100%; /* 프레임 너비에 맞추기 */
+  height: 100%; /* 프레임 높이에 맞추기 */
+  object-fit: cover; /* 이미지를 프레임에 꽉 채우기 */
+}
+
+.photo-frame .video {
+  width: 100%; /* 비디오도 프레임에 맞추기 */
+  height: 100%;
+}
+
+/* 하단 영역 스타일 */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px; /* 간격 조절 */
+}
+
+.f-title {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+}
+
+.f-date {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.container:nth-child(4) .footer .f-title,
+.container:nth-child(4) .footer .f-date {
+  color: black;
+}
