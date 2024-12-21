@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.example-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.example {
+  background-color: #eef;
+  padding: 10px;
+  border: 1px solid #ccd;
+}
+.output {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccd;
+}
+code {
+  background-color: #e8e8e8;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 2em; /* 예시 크기 */
+}
+h2 {
+  font-size: 1.5em; /* 예시 크기 */
+}
