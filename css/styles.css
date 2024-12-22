@@ -39,6 +39,7 @@ header h1 {
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -46,13 +47,13 @@ header h1 {
 .button {
   display: inline-block;
   padding: 15px 30px;
-  font-size: 1.1rem;
+  font-size: 16px;
   color: white;
   background-color: #4a90e2;
   border-radius: 8px;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 /* 버튼 hover 효과 */
@@ -66,4 +67,21 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #888;
+}
+
+/* 모바일 친화적인 레이아웃 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
